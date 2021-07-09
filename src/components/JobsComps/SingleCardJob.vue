@@ -13,10 +13,7 @@
 					:class="$style.single_job_item"
 				>
 					<div :class="$style.single_job_icon">
-						<img
-							src="https://static-exp1.licdn.com/sc/h/9a9u41thxt325ucfh5z8ga4m8"
-							alt=""
-						/>
+						<img :src="job.img || img" alt="" />
 					</div>
 					<div :class="$style.single_job_content">
 						<h3 :class="$style.single_job_title">
@@ -48,18 +45,9 @@ export default {
 		const show = (job) => {
 			emit("show", job);
 		};
-		// const loaded = ref(props.store.jobs);
-		// const add = ref(3);
-
-		// loaded.value = loaded.value.slice(0, add.value);
-
-		// const more = () => {
-		// 	const loadedd = ref(props.store.jobs);
-		// 	add.value++;
-		// 	loadedd.value = loadedd.value.slice(0, add.value);
-		// 	loaded.value = loadedd.value;
-		// };
-		return { show };
+		const img =
+			"https://static-exp1.licdn.com/sc/h/9a9u41thxt325ucfh5z8ga4m8";
+		return { show, img };
 	},
 };
 </script>

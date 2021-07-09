@@ -2,10 +2,7 @@
 	<section :class="$style.job_card">
 		<div :class="$style.job_icon">
 			<a href="#">
-				<img
-					src="https://static-exp1.licdn.com/sc/h/9a9u41thxt325ucfh5z8ga4m8"
-					alt=""
-				/>
+				<img :src="jobFromSingle.img || img" alt="" />
 			</a>
 		</div>
 		<div :class="$style.job_content">
@@ -56,6 +53,11 @@
 <script>
 export default {
 	props: ["jobFromSingle"],
+	setup() {
+		const img =
+			"https://static-exp1.licdn.com/sc/h/9a9u41thxt325ucfh5z8ga4m8";
+		return { img };
+	},
 };
 </script>
 
