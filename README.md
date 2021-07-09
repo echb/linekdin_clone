@@ -1,5 +1,6 @@
 # linkedin_clone
 linekdin_clone
+https://echb.github.io/linkedin_clone/
 
 # vue_linkedin
 
