@@ -1,2 +1,2 @@
-# linekdin_clone
+# linkedin_clone
 linekdin_clone
